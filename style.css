@@ -7,7 +7,7 @@
 
 .calculator {
     padding: 8px;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -20,15 +20,27 @@
 
 .screen {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    padding-top:4px;
-    height: 90px;
-    width: 265px;
+    padding: 8px;
+    flex-direction: column;
+    border: 1px solid transparent;
+    padding-top: 4px;
+    height: 40px;
+    width: 245px;
     border-radius: 4px;
     background-color: rgb(202, 231, 249);
+}
+
+.upperScreen {
+    display: flex;
+    font-size: smaller;
+    justify-content: flex-end;
+}
+
+.lowerScreen {
+    display: flex;
     font-size: larger;
+    margin-top: auto;
+    justify-content: flex-end;
 }
 
 .row {
